@@ -1,27 +1,52 @@
 /*Barra de navegacion*/
-header{
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
+@import "colores";
+
+.navbar {
+    background-color: $primario; 
+    position: relative;
+
 }
 
-.focus{
-    background-color: #ffcdc8;
-    border-radius: 8px;
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-nav{
-    font-family: 'Poppins', sans-serif;
-    ul{
-        list-style: none;
-        color: #F26052;
-        li{
-            margin: 10px;
-            padding: 0px 50px;
-            float: left;
-            font-size: 20px;
-            font-weight: 500;
-            text-align: center;
-            }
-        }
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: $primario;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    display: block;
+}
+
+.subnav:hover .subnav-content {
+display:block;
 }
