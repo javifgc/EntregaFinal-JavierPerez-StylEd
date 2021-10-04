@@ -1,0 +1,28 @@
+/*Colores*/
+
+//Variables
+$primario: #DA0037;
+$secundario: #161E35;
+$fondo: #161E35;
+$altGris: #F2F2F2;
+$altRojo: #E3A3B3;
+
+.primario{
+    color: $primario;
+}
+
+.secundario{
+    color: $secundario;
+}
+
+.fondo{
+    background-color: $fondo;
+}
+
+.fondoAlt{
+    background-color: $altGris;
+}
+
+.primarioAlt{
+    color: $altRojo;
+}
