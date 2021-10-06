@@ -1,12 +1,8 @@
 /*Animaciones*/
+@import "colores";
 
 .focus:hover{
-    background-color: #d5adc8;
-    background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
-    border-radius: 8px;
+    background-color: $fondo;
+    background-image: linear-gradient(0deg, $altRojo 0%, $primario 60%);
     transition:linear 500ms;
-}
-
-article:hover{
-    transform: scale(1.1,1.1);
 }
