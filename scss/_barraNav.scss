@@ -1,52 +1,144 @@
 /*Barra de navegacion*/
 @import "colores";
 
-.navbar {
-    background-color: $primario; 
+.menu {
+    height: 60px;
+    width: 100%;
+    background-color: $primario;
     position: relative;
-
 }
+
+.menu > .menuHeader {
+    display: inline;
+}
+
+.menu > .menuHeader > .menuLogo {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px;
+}
+
+.menu > .botonMenu {
+    display: none;
+}
+
+.menu > .menuLinks {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    margin-right: 24px;
+}
+
+.menu > .menuLinks > a {
+    display: inline-block;
+    padding: 13px 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu > .menuLinks > a:hover {
+    background-color: black;
+}
+
+/*------------------------------*/
+
+.navbar {
+    background: #c9c3c2;
+    position: relative; }
 
 .navbar a {
     float: left;
     font-size: 16px;
     color: white;
     padding: 14px 16px;
-    text-decoration: none;
-}
+    text-decoration: none; }
 
 .subnav {
-    float: left;
-    overflow: hidden;
-}
+    float: right;
+    overflow: hidden; }
 
 .subnavbtn {
-    font-size: 16px;  
+    font-size: 18px;
     border: none;
-    outline: none;
     color: white;
     padding: 14px 16px;
-    background-color: inherit;
-}
-
+    background-color: inherit; }
 
 .subnav-content {
     display: none;
     position: absolute;
-    background-color: $primario;
-    z-index: 1;
-}
+    background-color: #F26052;
+    z-index: 1; }
 
 .subnav-content a {
     float: left;
     color: white;
     text-decoration: none;
+    display: flex;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #fff; 
 }
 
 .subnav-content a:hover {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .subnav:hover .subnav-content {
-display:block;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.menu > #checkMenu {
+    display: none;
+}
+
+/*------------------------------*/
+
+@media (max-width:600px) {
+    .menu > .botonMenu {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .menu > .botonMenu > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .menu > .botonMenu > label:hover,.menu  #checkMenu:checked ~ .botonMenu > label {
+        background-color: #0000;
+    }
+    .menu > .botonMenu > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .menu > .menuLinks {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background: $fondo;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    .menu > .menuLinks > a {
+        display: block;
+        width: 100%;
+    }
+    .menu > #checkMenu:not(:checked) ~ .menuLinks {
+        height: 0px;
+    }
+    .menu > #checkMenu:checked ~ .menuLinks {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
 }

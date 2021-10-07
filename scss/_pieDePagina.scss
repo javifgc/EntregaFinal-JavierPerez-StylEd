@@ -1,45 +1,40 @@
 /*Pie de pagina*/
 footer{
+    img{
+        height: 15px;
+        }
+    ul{
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+        li{
+            margin: 5px 0px;
+            font-size: 14px;
+            font-weight: 400;
+            color: $altGris;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    footer{
     height: 50px;
         img{
             height: 15px;
             }
         ul{
-            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;                
             list-style: none;
             font-family: 'Poppins', sans-serif;
-            color: #561D72;
             li{
-                display: block;
-                margin: 10px 20px;
-                font-size: 14px;
-                font-weight: 400;
+                margin: 0px 20px;
+                float: left;
             }
         }
-    
-}
-
-@media screen and (min-width: 768px){
-    footer{
-        height: 50px;
-            img{
-                height: 15px;
-                }
-            ul{
-                display: flex;
-                flex-direction: row;
-                justify-content: end;                
-                list-style: none;
-                font-family: 'Poppins', sans-serif;
-                color: #561D72;
-                li{
-                    float: left;
-                    margin: 10px 20px;
-                    font-size: 14px;
-                    font-weight: 400;
-                }
-            }
-        
     }
-
 }

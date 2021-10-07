@@ -20,24 +20,38 @@
     </head>
     <body class="fondo container">
 <!-- encabezado -->
-<header class="row">
-    <div class="navbar col-sm-auto col-md-6 col-lg-12">
-        <a href="#"><img src="Multimedia/Logo.png" alt="logo" class="stylogo focus"></a>
-        <a href="#" class="focus">Home</a>
-        <a href="pages/Blog.html" class="focus">Blog</a>
-        <div class="subnav">
-            <button class="subnavbtn focus">Educación</button>
-            <div class="subnav-content">
-            <a href="pages/Tutoriales.html" class="focus">Tutoriales</a>
-            <a href="pages/Especializaciones.html" class="focus">Especializaciones</a>
+<header>
+    <div class="menu">
+        <input type="checkbox" id="checkMenu">
+        <div class="menuHeader">
+            <div class="menuLogo">
+                <a href="#"><img src="Multimedia/Logo.png" class="stylogo focus" alt=""></a>
             </div>
         </div>
+        <div class="botonMenu">
+            <label for="checkMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+        </div>
+        <div class="menuLinks">
+            <a href="#" class="focus">Home</a>
+            <a href="pages/Blog.html" class="focus">Blog</a>
             <a href="pages/Eventos.html" class="focus">Eventos</a>
+            <div class="subnav">
+                <button class="subnavbtn focus">Educación</button>
+                <div class="subnav-content">
+                <a href="pages/Tutoriales.html" class="focus">Tutoriales</a>
+                <a href="pages/Especializaciones.html" class="focus">Especializaciones</a>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
         <!-- cuerpo -->
-    <section class= "container">
-        <div id="carouselExampleCaptions" class="carousel  slide" data-bs-ride="carousel">
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -47,8 +61,8 @@
                 <div class="carousel-item active">
                     <a href="subpages/articulo1.html"><img src="Multimedia/barba.jpg" class="d-block w-100" alt="cuidado barba"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>¿Cómo cuidar tu barba?</h5>
-                        <p class="overlay">En este post, te damos consejos y tips útiles para el cuidado de tu barba</p>
+                        <h5 class="secundario">¿Cómo cuidar tu barba?</h5>
+                        <p class="overlay secundario">En este post, te damos consejos y tips útiles para el cuidado de tu barba</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -61,8 +75,8 @@
                 <div class="carousel-item">
                     <a href="#"><img src="Multimedia/corto mujer.jpg" class="d-block w-100" alt="cabello corto mujer"></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Cortes de cabello corto para mujeres</h5>
-                        <p class="overlay">Te mostramos algunos estilos cortos de tendencia para que lleves un look cómodo y versátil</p>
+                        <h5 class="headType">Cortes de cabello corto para mujeres</h5>
+                        <p class="overlay primario">Te mostramos algunos estilos cortos de tendencia para que lleves un look cómodo y versátil</p>
                     </div>
                 </div>
             </div>
@@ -89,7 +103,6 @@
     </section>
         </body>
         <!-- pie de pagina -->
-        <br>
         <footer class="row">
             <div>
                 <ul class="nav justify-content-end">
