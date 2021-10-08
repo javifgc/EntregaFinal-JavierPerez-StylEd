@@ -213,22 +213,24 @@
     height: 10px;
     border-top: 2px solid #eee; }
   .menu > .menuLinks {
-    position: absolute;
+    position: relative;
     display: block;
     width: 100%;
     background: #161E35;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 50px;
-    left: 0px; }
+    left: 24px; }
   .menu > .menuLinks > a {
     display: block;
     width: 100%; }
   .menu > #checkMenu:not(:checked) ~ .menuLinks {
     height: 0px; }
   .menu > #checkMenu:checked ~ .menuLinks {
-    height: calc(100vh - 50px);
-    overflow-y: auto; } }
+    height: 45vh;
+    z-index: 1; }
+  .subnav {
+    float: left;
+    overflow: hidden; } }
 
 /*Pie de pagina*/
 footer img {
@@ -277,18 +279,18 @@ footer ul {
 
 /*Blog*/
 /*Educacion*/
-.eduFlex {
+.eduResponsive {
   display: flex;
   flex-direction: column;
   row-gap: 5vh; }
-  .eduFlex div {
+  .eduResponsive div {
     color: #F2F2F2;
     text-align: center; }
-  .eduFlex img {
+  .eduResponsive img {
     height: 300px; }
 
 @media screen and (min-width: 768px) {
-  .eduFlex {
+  .eduResponsive {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -296,11 +298,26 @@ footer ul {
     justify-content: center; } }
 
 @media screen and (min-width: 1024px) {
-  .eduFlex {
+  .eduResponsive {
     display: flex;
     flex-flow: row nowrap;
     column-gap: 20px; } }
 
+/*tutoriales*/
+#card img {
+  height: 200px;
+  width: 300px; }
+
+#card {
+  background: royalblue;
+  height: auto;
+  width: auto;
+  text-align: center; }
+
+#card div {
+  margin: 10px; }
+
+/*Especializaciones*/
 /*Eventos*/
 /*Small*/
 .livegrid {

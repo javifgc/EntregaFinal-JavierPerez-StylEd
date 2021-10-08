@@ -20,43 +20,64 @@
     </head>
 <body class="fondo container">
 <!-- encabezado -->
-<header class="row">
-    <div class="navbar col-sm-auto col-md-6 col-lg-12">
-        <a href="../index.html"><img src="../Multimedia/Logo.png" alt="logo" class="stylogo focus"></a>
-        <a href="../index.html" class="focus">Home</a>
-        <a href="Blog.html" class="focus">Blog</a>
-        <div class="subnav">
-            <button class="subnavbtn focus">Educación</button>
-            <div class="subnav-content">
-            <a href="#" class="focus">Tutoriales</a>
-            <a href="Especializaciones.html" class="focus">Especializaciones</a>
+<header>
+    <div class="menu">
+        <input type="checkbox" id="checkMenu">
+        <div class="menuHeader">
+            <div class="menuLogo">
+                <a href="../index.html"><img src="../Multimedia/Logo.png" class="stylogo focus" alt="logo"></a>
             </div>
         </div>
+        <div class="botonMenu">
+            <label for="checkMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+        </div>
+        <div class="menuLinks">
+            <a href="../index.html" class="focus">Home</a>
+            <a href="Blog.html" class="focus">Blog</a>
             <a href="Eventos.html" class="focus">Eventos</a>
+            <div class="subnav">
+                <button class="subnavbtn focus">Educación</button>
+                <div class="subnav-content">
+                <a href="#" class="focus">Tutoriales</a>
+                <a href="Especializaciones.html" class="focus">Especializaciones</a>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
     <!-- cuerpo -->
-    <br>
     <div class="headType">Tutoriales</div>
     <p class="subType">Aprende tecnicas basicas para introducirte al mundo de la barberia y peluqueria.</p>
-<section class="tutogrid">
-        <div class="">
+<section class="eduResponsive">
+    <div id="card">
+        <img src="https://placekitten.com/200/300"  class= "img-fluid" alt="">
+        <div class="subType">Como realizar un French Crop texturizado para principiantes</div>
+        <div class="bodyType">En este video vas a encontrar paso a paso como hacer un corte french crop</div>
+        <a href="../subpages/frenchcrop.html"><button class="">Ver tutorial</button></a>
+    </div>
+    <div id="card">
+        <img src="https://placekitten.com/200/100" alt="">
+        <div class="subType">Como realizar un French Crop texturizado para principiantes</div>
+        <div class="bodyType">En este video vas a encontrar paso a paso como hacer un corte french crop</div>
+        <a href="../subpages/fade.html"><button class="">Ver tutorial</button></a>
+    </div>
+    <div id="card">
+        <img src="" alt="">
+        <div class="subType">Como realizar un French Crop texturizado para principiantes</div>
+        <div class="bodyType">En este video vas a encontrar paso a paso como hacer un corte french crop</div>
+        <a href="#"><button class="">Ver tutorial</button></a>
+    </div>
+    <div id="card">
+        <img src="" alt="">
+        <div class="subType">Como realizar un French Crop texturizado para principiantes</div>
+        <div class="bodyType">En este video vas a encontrar paso a paso como hacer un corte french crop</div>
+        <a href="#"><button class="">Ver tutorial</button></a>
     </div>
 </section>
-<!--    <section class="c" id="eduGrid">
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <img src="" alt="">
-            </div>
-    </section> -->
     <!-- pie de pagina -->
     <footer  class="row">
         <div>

@@ -24,7 +24,7 @@
 /*Blog*/
 
 /*Educacion*/
-.eduFlex{
+.eduResponsive{
     display: flex;
     flex-direction: column;
     row-gap: 5vh;
@@ -38,7 +38,7 @@
 }
 
 @media screen and (min-width: 768px){
-    .eduFlex{
+    .eduResponsive{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -48,12 +48,32 @@
 }
 
 @media screen and (min-width: 1024px){
-    .eduFlex{
+    .eduResponsive{
         display: flex;
         flex-flow: row nowrap;
         column-gap: 20px;
     }
 }
+/*tutoriales*/
+
+#card img{
+    height: 200px;
+    width: 300px;
+}
+
+#card{
+    background: royalblue;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+#card div{
+    margin: 10px;
+}
+/*Especializaciones*/
+
+
 /*Eventos*/
 
 /*Small*/

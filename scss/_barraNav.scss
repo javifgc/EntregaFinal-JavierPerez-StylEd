@@ -121,14 +121,13 @@
         border-top: 2px solid #eee;
     }
     .menu > .menuLinks {
-        position: absolute;
+        position: relative;
         display: block;
         width: 100%;
         background: $fondo;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
-        top: 50px;
-        left: 0px;
+        left: 24px;
     }
     .menu > .menuLinks > a {
         display: block;
@@ -138,7 +137,11 @@
         height: 0px;
     }
     .menu > #checkMenu:checked ~ .menuLinks {
-        height: calc(100vh - 50px);
-        overflow-y: auto;
+        height: 45vh;
+        z-index: 1;
     }
+    .subnav {
+        float: left;
+        overflow: hidden; }
 }
+
